@@ -5,9 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.pcdac</groupId>
+        <groupId>com.pcdac</groupId>
         <artifactId>P-CDAC</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>gateway</artifactId>
