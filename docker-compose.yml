@@ -104,7 +104,7 @@ services:
     build: ./user-service
     container_name: user_service_pcdac
     ports:
-      - "8081:8081"
+      - "8081:8080"
     networks:
       - pcdac-net
     depends_on:
@@ -121,7 +121,7 @@ services:
     build: ./hr-service
     container_name: hr_service_pcdac
     ports:
-      - "8082:8082"
+      - "8082:8080"
     networks:
       - pcdac-net
     depends_on:
@@ -136,7 +136,7 @@ services:
     build: ./finance-service
     container_name: finance_service_pcdac
     ports:
-      - "8083:8083"
+      - "8083:8080"
     networks:
       - pcdac-net
     depends_on:
