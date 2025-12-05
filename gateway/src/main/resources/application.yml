@@ -8,6 +8,13 @@ spring:
   config:
     import: "configserver:http://localhost:8888"
 
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true   # Auto-discover services registered in Eureka
+          lower-case-service-id: true
+
 eureka:
   client:
     serviceUrl:
